@@ -10,4 +10,18 @@ public class GoodStudent extends Student {
         this.bestRewardName = bestRewardName;
     }
 
+    public float getGPA() {
+        return gpa;
+    }
+    public String getBestRewardName() {
+        return bestRewardName;
+    }
+
+    public void setGPA(float gpa) {
+        this.gpa = gpa;
+    }
+    public void setBestRewardName(String bestRewardName) {
+        this.bestRewardName = bestRewardName;
+    }
+
 }
