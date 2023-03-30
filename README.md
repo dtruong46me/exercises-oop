@@ -228,14 +228,10 @@ Sau đó hãy viết chương trình Java có menu (Giao diện càng tốt) cho
 2. Sửa thông tin đầu sách theo mã sách
 3. Xóa bản ghi đầu sách nào đó theo mã sách
 4. Tìm kiếm thông tin sách có trong CSDL theo:
-
-a. Tên sách
-
-b. Tên tác giả
-
-c. Năm xuất bản
-
-d. Thể loại
+    + a. Tên sách
+    + b. Tên tác giả
+    + c. Năm xuất bản
+    + d. Thể loại
 
 **II. Nhân viên thư viện**
 
@@ -243,40 +239,28 @@ d. Thể loại
 2. Sửa thông tin bạn đọc nào đó theo `readerID`
 3. Xóa bản ghi bạn đọc nào đó theo `readerID`
 4. Tìm kiếm thông tin bạn đọc có trong CSDL theo:
-
-a. Tên bạn đọc
-
-b. Mã bạn đọc
-
-c. Loại bạn đọc
+    + a. Tên bạn đọc
+    + b. Mã bạn đọc
+    + c. Loại bạn đọc
 
 **III. Thông tin quản lý mượn**
 1. Tạo thông tin quản lý mượn cho từng bạn đọc bằng cách nhập các tài liệu mà bạn đọc mượn. Thực hiện các chức năng
-
-a. Thêm thông tin quản lý mượn vào CSDL
-
-b. Sửa thông tin quản lý mwuonj vào CSDL
-
-c. Xóa thông tin các bản ghi trong CSDL theo mã
+    + a. Thêm thông tin quản lý mượn vào CSDL
+    + b. Sửa thông tin quản lý mwuonj vào CSDL
+    + c. Xóa thông tin các bản ghi trong CSDL theo mã
 
 2. Sắp xếp danh sách quản lý mượn đã lưu trong CSDL:
-
-a. Theo tên bạn đọc
-
-b. Theo số lượng đầu sách đã được mượn (***Giảm dần***).
+    + a. Theo tên bạn đọc
+    + b. Theo số lượng đầu sách đã được mượn (***Giảm dần***).
 
 3. Tìm kiếm và hiển thị thông tin trong quản lý mượn theo tên bạn đọc.
 
 **IV. Phiếu mượn**
 1. Xuất thông tin phiếu mượn cho bạn đọc tại lần mượn hiện tại.
 2. Cho biết đầu sách nào được mượn:
-
-a. Nhiều nhất?
-
-b. Ít nhất?
+    + a. Nhiều nhất?
+    + b. Ít nhất?
 
 3. Cho biết bạn đọc nào mượn:
-
-a. Nhiều sách nhất?
-
-b. Ít sách nhất?
+    + a. Nhiều sách nhất?
+    + b. Ít sách nhất?
