@@ -203,19 +203,19 @@ Xây dựng chương trình quản lý kết quả học tập của sinh viên 
 Một thư viện chuyên cho thuyê các loại tài liệu và sách báo. Thư viện muốn bạn xây dựng ra một hệ thống quản lý mượn với yêu cầu mô tả như sau:
 
 
-- Mỗi **Tài liệu** có các thông tin: *Tên tài liệu*, *Tên tác giả*, *Năm xuất bản*, *Số lượng*. 
+- Mỗi **Tài liệu** có các thông tin: ***Tên tài liệu***, ***Tên tác giả***, ***Năm xuất bản***, ***Số lượng***. 
 
-- Thông tin về **Sách** có các thông tin: *Mã sách*, *Loại sách*, *Thông tin chung của tài liệu*. Trong đó loại sách có thể là: khoa học, nghệ thuật, kinh tế, ẩm thực, CNTT,... Mã sách có dạng `DCMT_xxxxxx`, ví dụ: `DCMT_000015`.
+- Thông tin về **Sách** có các thông tin: ***Mã sách***, ***Loại sách***, ***Thông tin chung của tài liệu***. Trong đó loại sách có thể là: khoa học, nghệ thuật, kinh tế, ẩm thực, CNTT,... Mã sách có dạng `DCMT_xxxxxx`, ví dụ: `DCMT_000015`.
 
-- Thông tin về **Người** bao gồm: *Số CMND/CCCD*, *Họ và tên*, *Địa chỉ*, *Ngày tháng năm sinh*, *Giới tính*.
+- Thông tin về **Người** bao gồm: ***Số CMND/CCCD***, ***Họ và tên***, ***Địa chỉ***, ***Ngày tháng năm sinh***, ***Giới tính***.
 
-- Thông tin về **Người đọc** gồm những thông tin của **Người** và bổ sung thêm: *Mã bạn đọc*, *Loại bạn đọc*, *Số điện thoại*, *Email*. Loại bạn đọc có thể là: Giáo viên, Sinh viên, Học sinh, Nhân viên văn phòng, Cụ lão. Mã bạn đọc có dạng `BD_xxxxxx`, ví dụ `BD_SV0123`.
+- Thông tin về **Người đọc** gồm những thông tin của **Người** và bổ sung thêm: ***Mã bạn đọc***, ***Loại bạn đọc***, ***Số điện thoại***, ***Email***. Loại bạn đọc có thể là: Giáo viên, Sinh viên, Học sinh, Nhân viên văn phòng, Cụ lão. Mã bạn đọc có dạng `BD_xxxxxx`, ví dụ `BD_SV0123`.
 
-- Thông tin về **Nhân viên thư viện** bao gồm các thông tin của **Người** và bổ sung thêm: *Mã nhân viên*, *Vị trí công việc*, *Ca làm việc*. Mã nhân viên có dạng `NVTV_xxxx`, ví dụ `NVTV_0099`. 
+- Thông tin về **Nhân viên thư viện** bao gồm các thông tin của **Người** và bổ sung thêm: ***Mã nhân viên***, ***Vị trí công việc***, ***Ca làm việc***. Mã nhân viên có dạng `NVTV_xxxx`, ví dụ `NVTV_0099`. 
 
 - Khi cho mượn, một bạn đọc sẽ được phép mượn tối đa 5 đầu sách khác nhau trong một lần mượn với số lượng tối đa là 5 cuốn mỗi đầu sách. Ghi rõ tình trạng hiện thời của sách khi cho mượn. Mã thông tin quản lý mượn sách có dạng `MNT_xxxxxx`, ví dụ `MNT_123456`.
 
-- Thông tin mượn sách sẽ được lưu trong lớp **Phiếu mượn**, bao gồm: *Mã phiếu mượn*, *Ngày mượn*, *Thời hạn mượn*, *Thông tin bạn đọc*, *Thông tin về danh sách các đầu sách bạn đọc mượn*, *Tổng số lượng sách mượn*, *Nhân viên cho mượn* và *Phí đặt cọc*. Mã phiếu mượn có dạng `PM_xxxxxx`, ví dụ `PM_123456`.
+- Thông tin mượn sách sẽ được lưu trong lớp **Phiếu mượn**, bao gồm: ***Mã phiếu mượn***, ***Ngày mượn***, ***Thời hạn mượn***, ***Thông tin bạn đọc***, ***Thông tin về danh sách các đầu sách bạn đọc mượn***, ***Tổng số lượng sách mượn***, ***Nhân viên cho mượn*** và ***Phí đặt cọc***. Mã phiếu mượn có dạng `PM_xxxxxx`, ví dụ `PM_123456`.
 
 - Tự xác định các lớp và mối quan hệ giữa các lớp cho phù hợp, biểu diễn trên UML, áp dụng một mẫu thiết kế nào đó như MVC, DAO chẳng hạn. Thiết kế biểu đồ CSDL và triển khai CSDL đã thiết kế trên MSSQL Server hoặc MySQL. 
 ***
