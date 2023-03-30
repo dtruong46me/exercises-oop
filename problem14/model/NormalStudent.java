@@ -1,10 +1,10 @@
-package problem14;
+package problem14.model;
 
 public class NormalStudent extends Student{
     private int englishScore;
     private float entryTestScore;
 
-    public NormalStudent(String fullName, String doB, String sex, String phoneNumber, String universityName, String gradeLevel, int englishScore, float entryTestScore) {
+    public NormalStudent(String fullName, String doB, String sex, String phoneNumber, String universityName, int gradeLevel, int englishScore, float entryTestScore) {
         super(fullName, doB, sex, phoneNumber, universityName, gradeLevel);
         this.englishScore = englishScore;
         this.entryTestScore = entryTestScore;

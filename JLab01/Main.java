@@ -1,37 +1,56 @@
 package JLab01;
 
+import java.util.Scanner;
 import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         ArrayList<Student> student_list = new ArrayList<>();
+        Validation validation = new Validation();
 
         int cnt = 0;
-        
+
         while (true) {
-            // Show Menu
-            int choice;
+            System.out.println("\nWHELCOME TO STUDENT MANAGEMENT");
+            System.out.println("Enter 1 : Create student");
+            System.out.println("Enter 2 : Find and sort student - by name");
+            System.out.println("Enter 3 : Update/Delete student");
+            System.out.println("Enter 4 : Display all students");
+            System.out.println("Enter 5 : Exit");
+            System.out.print("Enter your choice : ");
+
+            int choice = validation.chechInputLimit(1, 5);
 
             switch (choice) {
-                case 1:
-                    // Creat Student
+                case 1 : {
+                    if (cnt > 10) {
+                        System.out.println("Do you want to continue (Y/N)?");
+                        if (!validation.checkInputYN()) {
+                            return;
+                        }
+                    }
                     break;
+                }
 
-                case 2:
-                    // Find or Sort (by name)
+                case 2 : {
                     break;
+                }
 
-                case 3:
-                    // Update or Delete (by ID)
+                case 3 : {
                     break;
-                
-                case 4:
-                    // Report of list student(s)
+                }
+
+                case 4 : {
                     break;
-                
-                case 5:
+                }
+
+                case 5 : {
                     return;
+                }
             }
+
+            sc.close();
         }
     }
 }

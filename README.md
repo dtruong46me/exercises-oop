@@ -195,3 +195,88 @@ Xây dựng chương trình quản lý kết quả học tập của sinh viên 
 + Ở mỗi khoa, tìm ra sinh viên có điểm trung bình học kỳ cao nhất (ở bất kỳ học kỳ nào)
 + Ở mỗi khoa, sắp xếp danh sách sinh viên tăng dần theo loại và giảm dần theo năm vào học (sử dụng interface Comparable hoặc Comparator)
 + Ở mỗi khoa, thống kê số lượng sinh viên theo năm vào học. Ví dụ 2020: 100, 2019: 90, 2018: 120.
+
+
+## Problem 16 - Final Test
+**DOCUMENTS MANAGEMENT**
+
+Một thư viện chuyên cho thuyê các loại tài liệu và sách báo. Thư viện muốn bạn xây dựng ra một hệ thống quản lý mượn với yêu cầu mô tả như sau:
+
+
+- Mỗi **Tài liệu** có các thông tin: *Tên tài liệu*, *Tên tác giả*, *Năm xuất bản*, *Số lượng*. 
+
+- Thông tin về **Sách** có các thông tin: *Mã sách*, *Loại sách*, *Thông tin chung của tài liệu*. Trong đó loại sách có thể là: khoa học, nghệ thuật, kinh tế, ẩm thực, CNTT,... Mã sách có dạng `DCMT_xxxxxx`, ví dụ: `DCMT_000015`.
+
+- Thông tin về **Người** bao gồm: *Số CMND/CCCD*, *Họ và tên*, *Địa chỉ*, *Ngày tháng năm sinh*, *Giới tính*.
+
+- Thông tin về **Người đọc** gồm những thông tin của **Người** và bổ sung thêm: *Mã bạn đọc*, *Loại bạn đọc*, *Số điện thoại*, *Email*. Loại bạn đọc có thể là: Giáo viên, Sinh viên, Học sinh, Nhân viên văn phòng, Cụ lão. Mã bạn đọc có dạng `BD_xxxxxx`, ví dụ `BD_SV0123`.
+
+- Thông tin về **Nhân viên thư viện** bao gồm các thông tin của **Người** và bổ sung thêm: *Mã nhân viên*, *Vị trí công việc*, *Ca làm việc*. Mã nhân viên có dạng `NVTV_xxxx`, ví dụ `NVTV_0099`. 
+
+- Khi cho mượn, một bạn đọc sẽ được phép mượn tối đa 5 đầu sách khác nhau trong một lần mượn với số lượng tối đa là 5 cuốn mỗi đầu sách. Ghi rõ tình trạng hiện thời của sách khi cho mượn. Mã thông tin quản lý mượn sách có dạng `MNT_xxxxxx`, ví dụ `MNT_123456`.
+
+- Thông tin mượn sách sẽ được lưu trong lớp **Phiếu mượn**, bao gồm: *Mã phiếu mượn*, *Ngày mượn*, *Thời hạn mượn*, *Thông tin bạn đọc*, *Thông tin về danh sách các đầu sách bạn đọc mượn*, *Tổng số lượng sách mượn*, *Nhân viên cho mượn* và *Phí đặt cọc*. Mã phiếu mượn có dạng `PM_xxxxxx`, ví dụ `PM_123456`.
+
+- Tự xác định các lớp và mối quan hệ giữa các lớp cho phù hợp, biểu diễn trên UML, áp dụng một mẫu thiết kế nào đó như MVC, DAO chẳng hạn. Thiết kế biểu đồ CSDL và triển khai CSDL đã thiết kế trên MSSQL Server hoặc MySQL. 
+***
+Sau đó hãy viết chương trình Java có menu (Giao diện càng tốt) cho phép chọn thực hiện các chức năng sau:
+
+
+**I. Quản lý thông tin tài liệu**
+
+1. Nhập thêm thông tin các danh sách mới vào CSDL
+2. Sửa thông tin đầu sách theo mã sách
+3. Xóa bản ghi đầu sách nào đó theo mã sách
+4. Tìm kiếm thông tin sách có trong CSDL theo:
+
+a. Tên sách
+
+b. Tên tác giả
+
+c. Năm xuất bản
+
+d. Thể loại
+
+**II. Nhân viên thư viện**
+
+1. Thêm thông tin bạn đọc vào CSDL
+2. Sửa thông tin bạn đọc nào đó theo `readerID`
+3. Xóa bản ghi bạn đọc nào đó theo `readerID`
+4. Tìm kiếm thông tin bạn đọc có trong CSDL theo:
+
+a. Tên bạn đọc
+
+b. Mã bạn đọc
+
+c. Loại bạn đọc
+
+**III. Thông tin quản lý mượn**
+1. Tạo thông tin quản lý mượn cho từng bạn đọc bằng cách nhập các tài liệu mà bạn đọc mượn. Thực hiện các chức năng
+
+a. Thêm thông tin quản lý mượn vào CSDL
+
+b. Sửa thông tin quản lý mwuonj vào CSDL
+
+c. Xóa thông tin các bản ghi trong CSDL theo mã
+
+2. Sắp xếp danh sách quản lý mượn đã lưu trong CSDL:
+
+a. Theo tên bạn đọc
+
+b. Theo số lượng đầu sách đã được mượn (***Giảm dần***).
+
+3. Tìm kiếm và hiển thị thông tin trong quản lý mượn theo tên bạn đọc.
+
+**IV. Phiếu mượn**
+1. Xuất thông tin phiếu mượn cho bạn đọc tại lần mượn hiện tại.
+2. Cho biết đầu sách nào được mượn:
+
+a. Nhiều nhất?
+
+b. Ít nhất?
+
+3. Cho biết bạn đọc nào mượn:
+
+a. Nhiều sách nhất?
+
+b. Ít sách nhất?

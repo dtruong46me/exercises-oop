@@ -5,37 +5,36 @@ import java.util.Scanner;
 public class Validation {
     private final static Scanner sc = new Scanner(System.in);
 
-    // Check user input String
-    public static String CheckInpString() {
+    public static int chechInputLimit(int min, int max) {
         while (true) {
-            String result = sc.nextLine().trim();
-
-            if (result.isEmpty()) {
-                System.err.println("Not Empty !!!");
-                System.out.print("Enter again : ");
-            }
-            else {
+            try {
+                int result = Integer.parseInt(sc.nextLine().trim());
+                if (result < min || result > max) {
+                    throw new NumberFormatException();
+                }
                 return result;
+            }
+            catch (NumberFormatException e) {
+                System.err.println("Your input should be in range ["+min+","+max+"]");
+                System.out.print("Enter again : ");
             }
         }
     }
 
-
-    // Check user input Y/N
-    public static boolean CheckInpYN() {
+    public static boolean checkInputYN() {
         while (true) {
-            String result = CheckInpString();
-            
+            String result = sc.nextLine();
             if (result.equalsIgnoreCase("Y")) {
                 return true;
             }
-
-            if (result.equalsIgnoreCase("N")) {
+            else if (result.equalsIgnoreCase("N")) {
                 return false;
             }
-
-            System.err.println("Please input Y/y or N/n.");
-            System.out.print("Enter again : ");
+            else {
+                System.err.println("Your input should be Y/y or N/n");
+                System.out.print("Enter again : ");
+            }
         }
     }
+
 }

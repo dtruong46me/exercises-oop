@@ -1,4 +1,4 @@
-package problem14;
+package problem14.model;
 
 public class Student {
     protected String fullName;
@@ -6,9 +6,9 @@ public class Student {
     protected String sex;
     protected String phoneNumber;
     protected String universistyName;
-    protected String gradeLevel;
+    protected int gradeLevel;
 
-    public Student(String fullName, String doB, String sex, String phoneNumber, String universityName, String gradeLevel) {
+    public Student(String fullName, String doB, String sex, String phoneNumber, String universityName, int gradeLevel) {
         this.fullName = fullName;
         this.doB = doB;
         this.sex = sex;
@@ -32,7 +32,7 @@ public class Student {
     public String getUniversityName() {
         return universistyName;
     }
-    public String getGradeLevel() {
+    public int getGradeLevel() {
         return gradeLevel;
     }
 
@@ -51,8 +51,18 @@ public class Student {
     public void setUniversityName(String universityName) {
         this.universistyName = universityName;
     }
-    public void setGradeLevel(String gradeLevel) {
+    public void setGradeLevel(int gradeLevel) {
         this.gradeLevel = gradeLevel;
+    }
+
+    public void showMyInfor(Student student) {
+        System.out.println("STUDENT INFORMATION");
+        System.out.println(" - Full Name    : "+fullName);
+        System.out.println(" - D.O.B        :"+doB);
+        System.out.println(" - Sex          :"+sex);
+        System.out.println(" - Phone Number : "+phoneNumber);
+        System.out.println(" - University   :"+universistyName);
+        System.out.println(" - Grade Level  : "+gradeLevel);
     }
 
 }

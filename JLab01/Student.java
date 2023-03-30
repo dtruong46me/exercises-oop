@@ -47,13 +47,8 @@ public class Student {
         this.course = course;
     }
 
-    // @Override
-    // public int compareTo(Student t) {
-    //     return t.name.compareTo(this.name);
-    // }
-
-    // public void print() {
-    //     System.out.printf("%-15s%-15s%-15s\n", name, semeter, course);
-    // }
+    public void showInfor() {
+        System.out.printf("%-20s%-10s%-15s\n",name, semeter, course);
+    }
 
 }
