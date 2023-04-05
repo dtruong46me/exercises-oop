@@ -197,7 +197,38 @@ Xây dựng chương trình quản lý kết quả học tập của sinh viên 
 + Ở mỗi khoa, thống kê số lượng sinh viên theo năm vào học. Ví dụ 2020: 100, 2019: 90, 2018: 120.
 
 
-## Problem 16 - Final Test
+## Problem 16 
+**STUDENTS MANAGEMENT**
+
+Xây dựng chương trình quản lý sinh viên (Họ tên, ngày tháng năm sinh, địa chỉ (quê quán), MSSV, ngành học) với 8 chức năng sau:
+1. In danh sách sinh viên
+2. Thêm sinh viên mới vào danh sách
+3. Sửa thông tin sinh viên
+4. Xóa sinh viên ra khỏi danh sách
+5. Tìm kiếm sinh viên (theo bất kỳ ký tự, chữ cái, chữ số...)
+6. Sắp xếp theo tên
+7. Sao lưu sinh viên từ bảng vào 1 file .txt
+8. Thoát chương trình
+
+Yêu cầu đối với mỗi chức năng:
+Ban đầu khởi tạo danh sách sinh viên là rỗng, khi thêm danh sách sinh viên sẽ được lưu vào 1 mảng, chứa thông tin sinh viên. 
++ Các chức năng: (2), (3), (4), (5) khi người dùng truy cập sẽ có chức năng phụ "Return" và quay trở lại MENU nếu người dùng không muốn thực hiện chức năng đó nữa.
++ In danh sách sinh viên: Trích xuất thông tin từ dữ liệu thô file .txt thành 1 bảng như sau:
+
+```
++----+-----------------------+-------------+------------+----------------+------------------------+---------------------------------------------+
+| No.| Full name             | StudentID   |  D.O.B     | Address        | Major                  | University                                  |
++----+-----------------------+-------------+------------+----------------+------------------------+---------------------------------------------+
+| 1  | Phan Dinh Truong      | 20214937    | 01/01/2003 | Bac Ninh       | Data Science           | Hanoi University of Science and Technology  |
+| 2  | Tran The Toan         | 20214937    | 03/11/2003 | Bac Ninh       | Software Engineering   | FPT University                              |
++----+-----------------------+-------------+------------+----------------+------------------------+---------------------------------------------+
+```
++ File .txt lưu trữ quản lý sinh viên được ngăn cách bởi dấu phẩy ","
++ Xóa thông tin sinh viên (theo MSSV) - chức năng (4), yêu cầu người dùng nhập MSSV cần xóa, nếu không tìm thấy sẽ in ra màn hình "Cannot find student!" và yêu cầu người dùng nhập lại.
++ Tìm kiếm sinh viên chỉ thực hiện tìm kiếm theo tên, chẳng hạn khi người dùng nhập vào chữ "ng", không phân biệt hoa hay thường, thì sẽ in ra dữ liệu hàng (chứa ký tự "ng") thành bảng từ file data.txt
+
+
+## Problem 17 - Final Test
 **DOCUMENTS MANAGEMENT**
 
 Một thư viện chuyên cho thuyê các loại tài liệu và sách báo. Thư viện muốn bạn xây dựng ra một hệ thống quản lý mượn với yêu cầu mô tả như sau:

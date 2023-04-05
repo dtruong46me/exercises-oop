@@ -1,4 +1,4 @@
-package problem13;
+package problem13.exception;
 
 public class BirthDayException extends Exception {
     public BirthDayException(String msg) {

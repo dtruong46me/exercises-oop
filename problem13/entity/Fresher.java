@@ -1,4 +1,4 @@
-package problem13;
+package problem13.entity;
 
 import java.time.LocalDate;
 import java.util.List;

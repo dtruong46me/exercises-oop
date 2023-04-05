@@ -1,4 +1,4 @@
-package problem13;
+package problem13.exception;
 
 public class EmailException extends Exception {
     public EmailException(String msg) {
