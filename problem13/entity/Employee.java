@@ -9,16 +9,19 @@ public abstract class Employee {
     protected LocalDate doB;
     protected String phoneNum;
     protected String email;
+    protected int employeeType;
+    protected static int employeeCount;
     protected List<Certificate> certificates;
     
 
     public Employee() {}
-    public Employee(String id, String fullName, LocalDate doB, String phoneNum, String email, List<Certificate> certificates) {
+    public Employee(String id, String fullName, LocalDate doB, String phoneNum, String email, int employeeType, List<Certificate> certificates) {
             this.id = id;
             this.fullName = fullName;
             this.doB = doB;
             this.phoneNum = phoneNum;
             this.email = email;
+            this.employeeType = employeeType;
             this.certificates = certificates;
         }
     

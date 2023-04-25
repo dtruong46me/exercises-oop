@@ -15,8 +15,8 @@ public class Experience extends Employee {
     }
     
     public Experience(String ID, String fullName, LocalDate doB, String phoneNum,
-                    String email,List<Certificate> certificates, int expInYear, String proSkill) {
-        super(ID, fullName, doB, phoneNum, email, certificates);
+                    String email, int employeeType, List<Certificate> certificates, int expInYear, String proSkill) {
+        super(ID, fullName, doB, phoneNum, email, employeeType, certificates);
         this.expInYear = expInYear;
         this.proSkill = proSkill;
     }

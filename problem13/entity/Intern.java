@@ -15,9 +15,9 @@ public class Intern extends Employee{
         this.uniName = uniName;
     }
 
-    public Intern(String id, String fullName, LocalDate doB, String phoneNum, String email, List<Certificate> certificates,
+    public Intern(String id, String fullName, LocalDate doB, String phoneNum, String email, int employeeType, List<Certificate> certificates,
             String major, int semester, String uniName) {
-        super(id, fullName, doB, phoneNum, email, certificates);
+        super(id, fullName, doB, phoneNum, email, employeeType, certificates);
         this.major = major;
         this.semester = semester;
         this.uniName = uniName;

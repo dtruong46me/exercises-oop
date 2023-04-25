@@ -228,7 +228,32 @@ Ban đầu khởi tạo danh sách sinh viên là rỗng, khi thêm danh sách s
 + Tìm kiếm sinh viên chỉ thực hiện tìm kiếm theo tên, chẳng hạn khi người dùng nhập vào chữ "ng", không phân biệt hoa hay thường, thì sẽ in ra dữ liệu hàng (chứa ký tự "ng") thành bảng từ file data.txt
 
 
-## Problem 17 - Final Test
+## Problem 17
+**BOOKS MANAGEMENT**
+Thông tin về **Book** gồm các thuộc tính (bookID, bookName, author, specialization, publishYear, quantity), trong đó: 
++ ***specialization*** có thể là: Science, Art, Economic, IT
++ ***bookID*** là một số nguyên có 6 chữ số, tự động tăng
+
+Thông tin về **Reader** gồm các thuộc tính (readerID, fullName, address, phoneNumber), trong đó:
++ ***readerID*** là một số nguyên có 8 chữ số, tự động tăng
++ ***phoneNumber*** là số có độ dài là 10
+
+Thông tin về **ReaderManagement** trong đó một người đọc (Reader) sẽ được mượn tối đa 5 đầu sách (Book) khác nhau, mỗi đầu sách tối đa 3 cuốn. Ghi rõ tình trạng hiện thời của sách ghi mượn.
+
+Tự xác định các lớp cho phù hợp và viết chương trình Java có Menu cho phép thực hiện các chức năng sau:
+
+1. Thêm **Book** vào file ***BOOK.DAT*** có xử lý ngoại lệ
+2. In ra màn hình console danh sách các sách đã có trong file
+3. Thêm người đọc (**Reader**) vào file ***READER.DAT*** có xử lý ngoại lệ
+4. In ra màn hình console danh sách các người đọc đã có trong file
+5. Tạo thông tin **ReaderManagement** cho từng **Reader** bằng cách nhập các đầu sách mà người đọc mượn, lưu vào file ***BRM.DAT*** (Book Reader Management) và in ra màn hình console danh sách (Mỗi người đọc với một đầu sách chỉ xuất hiện 1 lần)
+6. Sắp xếp danh sách **ReaderManagement** đã lưu trong file ***BRM.DAT***
+    + (a) Theo tên **Reader**
+    + (b) Theo số lượng **Book** được mượn theo thứ tự giảm dần
+7. Tìm kiếm và hiển thị thông tin trong **ReaderManagement** theo tên **Reader**
+
+
+## Problem 18 - Final Test
 **DOCUMENTS MANAGEMENT**
 
 Một thư viện chuyên cho thuyê các loại tài liệu và sách báo. Thư viện muốn bạn xây dựng ra một hệ thống quản lý mượn với yêu cầu mô tả như sau:
