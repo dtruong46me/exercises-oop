@@ -1,33 +1,32 @@
 package problem13.entity;
 
-import java.time.LocalDate;
 import java.util.List;
 
 public class Fresher extends Employee {
-    private LocalDate graduationDate;
+    private String graduationDate;
     private String graduationRank;
     private String education;
 
     public Fresher() {}
-    public Fresher(LocalDate graduationDate, String graduationRank, String education) {
+    public Fresher(String graduationDate, String graduationRank, String education) {
         this.graduationDate = graduationDate;
         this.graduationRank = graduationRank;
         this.education = education;
     }
 
-    public Fresher(String id, String fullName, LocalDate doB, String phoneNum, String email, int employeeType, List<Certificate> certificates,
-                LocalDate graduationDate, String graduationRank, String education) {
+    public Fresher(String id, String fullName, String doB, String phoneNum, String email, int employeeType, List<Certificate> certificates,
+                String graduationDate, String graduationRank, String education) {
         super(id, fullName, doB, phoneNum, email, employeeType, certificates);
         this.graduationDate = graduationDate;
         this.graduationRank = graduationRank;
         this.education = education;                
     }
     
-    public LocalDate getGraduationDate() {return graduationDate;}
+    public String getGraduationDate() {return graduationDate;}
     public String getGraduationRank() {return graduationRank;}
     public String getEducation() {return education;}
 
-    public void setGraduationDate(LocalDate graduationDate) {this.graduationDate = graduationDate;}
+    public void setGraduationDate(String graduationDate) {this.graduationDate = graduationDate;}
     public void setGraduationRank(String graduationRank) {this.graduationRank = graduationRank;}
     public void setEducation(String education) {this.education = education;}
 

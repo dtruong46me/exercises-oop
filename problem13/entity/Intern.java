@@ -1,6 +1,5 @@
 package problem13.entity;
 
-import java.time.LocalDate;
 import java.util.List;
 
 public class Intern extends Employee{
@@ -15,7 +14,7 @@ public class Intern extends Employee{
         this.uniName = uniName;
     }
 
-    public Intern(String id, String fullName, LocalDate doB, String phoneNum, String email, int employeeType, List<Certificate> certificates,
+    public Intern(String id, String fullName, String doB, String phoneNum, String email, int employeeType, List<Certificate> certificates,
             String major, int semester, String uniName) {
         super(id, fullName, doB, phoneNum, email, employeeType, certificates);
         this.major = major;

@@ -15,6 +15,15 @@ public class Management {
         employeesList = new ArrayList<>();
     }
 
+    public Employee findEmployeeByID(String id) {
+        for (Employee employee : employeesList) {
+            if (employee.getID().equals(id)) {
+                return employee;
+            }
+        }
+        return null;
+    }
+
     public void addEmployee(Employee employee) {
         employeesList.add(employee);
     }
@@ -29,14 +38,15 @@ public class Management {
         }
     }
 
-    public void deleteEmployee(String id) {
+    public boolean deleteEmployee(String id) {
         for (int i=0; i<employeesList.size(); i++) {
             Employee emp = employeesList.get(i);
             if (emp.getID().equals(id)) {
                 employeesList.remove(i);
-                break;
+                return true;
             }
         }
+        return false;
     }
 
     public List<Intern> findIntern() {
