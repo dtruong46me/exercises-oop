@@ -1,17 +1,19 @@
 package problem13;
 
 import java.util.Scanner;
-
 import problem13.entity.Employee;
 import problem13.entity.Experience;
 import problem13.entity.Fresher;
 import problem13.entity.Intern;
+import problem13.exception.FullNameException;
 import problem13.manager.Management;
+// import problem13.validation.FullNameValidation;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FullNameException {
         Scanner sc = new Scanner(System.in);
         Management management = new Management();
+
 
         while (true) {
             System.out.println("\nEMPLOYEE MANAGEMENT");
@@ -27,6 +29,14 @@ public class Main {
             switch (choice) {
                 case "1":
                     System.out.println("\n1: INSERT NEW EMPLOYEE");
+                    // String fullName;
+                    // while (true) {
+                    //     System.out.print("   - Enter Full Name: ");
+                    //     fullName = sc.nextLine();
+
+                    //     FullNameValidation.isValidFullName (fullName);
+                    //     break;
+                    // }
                     System.out.print("   - Enter Full Name: ");
                     String fullName = sc.nextLine();
                     System.out.print("   - Enter Birthday: (dd/mm/yyyy): ");
